@@ -1,4 +1,5 @@
 #include "Dice.hpp"
+
 #include <random>
 
 using namespace mechanics;
