@@ -1,10 +1,10 @@
 #include "Dice.hpp"
-#include<ctime>
+
+#include <random>
 
 using namespace mechanics;
-
-
-std::string Dice::printSomething() const
-{
-	return "ma khassik";
+int Dice::roll() 
+{ 
+   static std::uniform_int_distribution <int> randomValueGenerator(1, 6);
+   return randomValueGenerator(m_randomDevice);
 }

@@ -1,17 +1,14 @@
 #ifndef MECHANICS_DICE_HPP
 #define MECHANICS_DICE_HPP
-
-#include <string>
+#include <random>
 
 namespace mechanics
 {
-
-   class Dice
-   {
+   class Dice {
+   private:
+      std::random_device m_randomDevice;
    public:
-      Dice() = default;
-   public:
-      std::string printSomething() const;
+      int roll();
    };
 }
 
